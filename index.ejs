@@ -1,0 +1,27 @@
+
+<%- include("head") %>
+<div class="bd">
+    
+    <div class="main">
+        <input type="checkbox" name="" id="chk" aria-hidden="true">
+        <div class="signup">
+            <form action="/login" method="post">
+                <label for="chk" aria-hidden="true">LOG IN</label>
+                <input type="email" placeholder="Email" required="">
+                <input type="password" placeholder="Password" required="">
+                <input class="button" type="submit" value="Log in">
+            </form>
+        </div>
+        <div class="login" >
+            <form action="/signup" method="post">
+                <label for="chk" aria-hidden="true">SIGN UP</label>
+                <input type="text" name="email" placeholder="Enter your name" required="">
+                <input type="password" name="pass" placeholder="Create password" required="">
+                <input type="email" name="email" placeholder="enter email" required="">
+                <input type="text-area" name="pass" placeholder="Enter native place" required="">
+               <input class="button" type="submit" value="Sign Up">
+                        </form>
+        </div>
+    </div>
+</div>
+</html>
